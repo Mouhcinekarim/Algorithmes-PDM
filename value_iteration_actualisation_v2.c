@@ -87,6 +87,13 @@ int main()
     for (i = 0; i < NUM_STATES; i++) {
         printf("V[%d] = %.2f\n",i ,V[i]);
     }
+// Affichage des valeurs des variables
+printf("Les valeurs des variables sont :\n");
+for (i = 0; i < n; i++) {
+    printf("x%d = %f\n", i+1, x[i]);
+}
 
+// Libération de la mémoire allouée
+free(x);
     return 0;
 }
